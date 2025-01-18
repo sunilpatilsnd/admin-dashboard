@@ -71,6 +71,13 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
+
+/*10.  list styles reset */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 /* CSS Reset end */
 .container {
   display: grid;
@@ -81,4 +88,43 @@ body {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
   background-color: blueviolet;
+}
+.header {
+  background-color: #a7a6a6;
+  padding: 15px;
+}
+.header-top {
+  display: grid;
+  grid-template-columns: 3fr 0.5fr 1fr;
+}
+.header-btm {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: end;
+}
+.main {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-row: 1fr 1fr;
+  gap: 15px;
+}
+.projects {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+.announcements {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.trends {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px;
 }
